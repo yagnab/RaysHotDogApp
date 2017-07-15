@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4583de03-74bf-463a-b04d-6631c0ed59bc}</ProjectGuid>
+    <ProjectGuid>{4583DE03-74BF-463A-B04D-6631C0ED59BC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>RaysHotDogApp.Repository</RootNamespace>
     <AssemblyName>RaysHotDogApp.Repository</AssemblyName>
@@ -36,7 +36,11 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Entities\HotDog.cs" />
+    <Compile Include="Entities\HotDogGroup.cs" />
+    <Compile Include="Interfaces\IHotDogGroupRepo.cs" />
+    <Compile Include="Interfaces\IHotDogRepo.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

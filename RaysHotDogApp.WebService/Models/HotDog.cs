@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace RaysHotDogApp.Repository.Entities
+namespace RaysHotDogApp.WebService.Models
 {
     public class HotDog
     {
         //attributes
+        [Key]
         public int HotDogId { get; set; }
         public string Name { get; set; }
         public string ShortDescription { get; set; }
