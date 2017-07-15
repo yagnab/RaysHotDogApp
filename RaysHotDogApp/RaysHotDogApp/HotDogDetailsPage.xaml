@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RaysHotDogApp.HotDogDetailsPage">
+    <ContentPage.Content>
+        <!--Default page-->
+        <StackLayout>
+            <!-- Display hotdog info -->
+            <Image x:Name="ImageOutput"/>
+            <Label x:Name="NameOutput"
+                />
+            <Label x:Name="ShortDescOutput"
+                />
+            <Label x:Name="LongDescOutput"
+                />
+            <Label x:Name="PriceOutput"
+                />
+            
+            <!-- Input for order -->
+            <RelativeLayout>
+                <Button x:Name="CancelBtn"
+                        Text="Cancel"/>
+                <Entry x:Name="OrderNumInput"
+                       Text="1"/>
+                <Button x:Name="SubmitBtn"
+                        Text="Order now"/>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

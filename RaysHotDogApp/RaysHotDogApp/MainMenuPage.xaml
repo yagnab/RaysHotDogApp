@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RaysHotDogApp"
+             x:Class="RaysHotDogApp.MainMenuPage">
+    <StackLayout Padding="10">
+        <Label Text="Welcome to the Rays hot dogs app!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+        <Button x:Name="ViewHotDogDetailsBtn"
+                Text="Order Hot dogs"
+                Clicked="ViewHotDogDetailsBtn_Clicked"/>
+        <Button x:Name="ContactDetailsBtn"
+                Text="Contact us"
+                Clicked="ContactDetailsBtn_Clicked"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RaysHotDogApp.HotDogTypeMenuPage"
+             xmlns:pages="clr-namespace:RaysHotDogApp">
+  <MasterDetailPage.Master>
+    <pages:HotDogTypeMenuPageMaster x:Name="MasterPage" />
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:HotDogTypeMenuPageDetail />
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>
