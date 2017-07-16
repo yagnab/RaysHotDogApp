@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -21,5 +22,13 @@ namespace RaysHotDogApp.WebService.Models
 
         public DbSet<HotDog> HotDogs { get; set; }
         public System.Data.Entity.DbSet<RaysHotDogApp.WebService.Models.HotDogGroup> HotDogGroups { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            //makes it auto-increment
+            modelBuilder.Entity<HotDogGroup>().Property(a => a.HotDogGroupId).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+        }
     }
 }

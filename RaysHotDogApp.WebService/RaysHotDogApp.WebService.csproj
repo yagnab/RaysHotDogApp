@@ -194,6 +194,35 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707151707310_InitialCreate.cs" />
+    <Compile Include="Migrations\201707151707310_InitialCreate.Designer.cs">
+      <DependentUpon>201707151707310_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161452522_Initial.cs" />
+    <Compile Include="Migrations\201707161452522_Initial.Designer.cs">
+      <DependentUpon>201707161452522_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161834414_changed-seed-changed-pk-hdg-added-fk-hd.cs" />
+    <Compile Include="Migrations\201707161834414_changed-seed-changed-pk-hdg-added-fk-hd.Designer.cs">
+      <DependentUpon>201707161834414_changed-seed-changed-pk-hdg-added-fk-hd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161843361_made-hotdogsgroup-pk-autoincrement.cs" />
+    <Compile Include="Migrations\201707161843361_made-hotdogsgroup-pk-autoincrement.Designer.cs">
+      <DependentUpon>201707161843361_made-hotdogsgroup-pk-autoincrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161846106_made-hotdogsgroup-pk-autoincrement-again.cs" />
+    <Compile Include="Migrations\201707161846106_made-hotdogsgroup-pk-autoincrement-again.Designer.cs">
+      <DependentUpon>201707161846106_made-hotdogsgroup-pk-autoincrement-again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161854271_hopefully-autoincrement-works-now-pls.cs" />
+    <Compile Include="Migrations\201707161854271_hopefully-autoincrement-works-now-pls.Designer.cs">
+      <DependentUpon>201707161854271_hopefully-autoincrement-works-now-pls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707161916260_hackish-way-to-fix-problem.cs" />
+    <Compile Include="Migrations\201707161916260_hackish-way-to-fix-problem.Designer.cs">
+      <DependentUpon>201707161916260_hackish-way-to-fix-problem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\HotDog.cs" />
     <Compile Include="Models\HotDogGroup.cs" />
     <Compile Include="Models\RaysAppContext.cs" />
@@ -275,6 +304,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707151707310_InitialCreate.resx">
+      <DependentUpon>201707151707310_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161452522_Initial.resx">
+      <DependentUpon>201707161452522_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161834414_changed-seed-changed-pk-hdg-added-fk-hd.resx">
+      <DependentUpon>201707161834414_changed-seed-changed-pk-hdg-added-fk-hd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161843361_made-hotdogsgroup-pk-autoincrement.resx">
+      <DependentUpon>201707161843361_made-hotdogsgroup-pk-autoincrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161846106_made-hotdogsgroup-pk-autoincrement-again.resx">
+      <DependentUpon>201707161846106_made-hotdogsgroup-pk-autoincrement-again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161854271_hopefully-autoincrement-works-now-pls.resx">
+      <DependentUpon>201707161854271_hopefully-autoincrement-works-now-pls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707161916260_hackish-way-to-fix-problem.resx">
+      <DependentUpon>201707161916260_hackish-way-to-fix-problem.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
