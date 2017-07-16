@@ -17,6 +17,7 @@ namespace RaysHotDogApp.WebService.Models
         public int PrepTime { get; set; }
         public List<string> Ingredients { get; set; }
         public bool IsFavourite { get; set; }
-        public HotDogGroup Group { get; set; }
+        public int GroupId { get; set; } //Fk
+        public HotDogGroup Group { get; set; } //Navigation property
     }
 }
